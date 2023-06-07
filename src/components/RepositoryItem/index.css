@@ -1,0 +1,64 @@
+/* Write your CSS here */
+.each-repository {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f8ff;
+  min-height: 300px;
+  min-height: 300px;
+  border-radius: 20px;
+}
+@media screen and (min-width: 768px) {
+  .each-repository {
+    min-height: 400px;
+    max-width: 400px;
+  }
+}
+.image {
+  height: 30px;
+  width: 40px;
+}
+@media screen and (min-width: 768px) {
+  .image {
+    height: 50px;
+    width: 60px;
+  }
+}
+.name {
+  font-family: 'Roboto';
+  font-size: 17px;
+  color: #e73959;
+  font-weight: 500;
+}
+@media screen and (min-width: 768px) {
+  .name {
+    font-size: 19px;
+  }
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img {
+  height: 30px;
+  width: 30px;
+}
+@media screen and (min-width: 768px) {
+  .img {
+    height: 40px;
+    width: 40px;
+  }
+}
+.count {
+  color: #1e293b;
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 400;
+}
+@media screen and (min-width: 768px) {
+  .count {
+    font-size: 18px;
+  }
+}

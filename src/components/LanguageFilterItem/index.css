@@ -1,0 +1,28 @@
+/* Write your CSS here */
+.each-language {
+  list-style-type: none;
+  margin-left: 10px;
+}
+
+.button {
+  border-radius: 15px;
+  font-family: 'Roboto';
+  font-weight: 500;
+  background-color: transparent;
+  font-size: 18px;
+}
+@media screen and (min-width: 768px) {
+  .button {
+    font-size: 22px;
+    padding: 20px;
+  }
+}
+
+.active {
+  border: 1px solid #0284c7;
+  color: #0284c7;
+}
+.non-active {
+  border: none;
+  color: #1e293b;
+}
