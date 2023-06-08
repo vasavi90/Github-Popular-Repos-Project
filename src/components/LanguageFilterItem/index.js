@@ -1,4 +1,5 @@
 // Write your code here
+import './index.css'
 
 const LanguageFilterItem = props => {
   const {isActive, details, idChanged} = props

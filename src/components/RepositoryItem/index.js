@@ -1,4 +1,5 @@
 // Write your code here
+import './index.css'
 
 const RepositoryItem = props => {
   const {details} = props
@@ -15,7 +16,7 @@ const RepositoryItem = props => {
           alt="stars"
           className="img"
         />
-        <p className="count">{starsCount}</p>
+        <p className="count">{starsCount} stars</p>
       </div>
       <div className="container">
         <img
@@ -23,7 +24,7 @@ const RepositoryItem = props => {
           alt="forks"
           className="img"
         />
-        <p className="count">{forksCount}</p>
+        <p className="count">{forksCount} forks</p>
       </div>
       <div className="container">
         <img
@@ -31,7 +32,7 @@ const RepositoryItem = props => {
           alt="open issues"
           className="img"
         />
-        <p className="count">{issuesCount}</p>
+        <p className="count">{issuesCount} issues</p>
       </div>
     </li>
   )

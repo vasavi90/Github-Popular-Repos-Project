@@ -2,34 +2,36 @@
 .each-repository {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  padding: 20px;
   align-items: center;
   background-color: #f8f8ff;
-  min-height: 300px;
-  min-height: 300px;
-  border-radius: 20px;
+  height: 300px;
+
+  border-radius: 25px;
+  list-style-type: none;
+  margin: 20px;
 }
 @media screen and (min-width: 768px) {
   .each-repository {
-    min-height: 400px;
-    max-width: 400px;
+    height: 400px;
+    width: 350px;
   }
 }
 .image {
-  height: 30px;
-  width: 40px;
+  height: 80px;
+  width: 80px;
 }
 @media screen and (min-width: 768px) {
   .image {
-    height: 50px;
-    width: 60px;
+    height: 120px;
+    width: 140px;
   }
 }
 .name {
   font-family: 'Roboto';
-  font-size: 17px;
+  font-size: 19px;
   color: #e73959;
-  font-weight: 500;
+  font-weight: bold;
 }
 @media screen and (min-width: 768px) {
   .name {
@@ -44,11 +46,12 @@
 .img {
   height: 30px;
   width: 30px;
+  margin-right: 10px;
 }
 @media screen and (min-width: 768px) {
   .img {
-    height: 40px;
-    width: 40px;
+    height: 30px;
+    width: 30px;
   }
 }
 .count {

@@ -25,7 +25,7 @@ const apiStatusConstants = {
 
 class GithubPopularRepos extends Component {
   state = {
-    apiStatus: apiStatusConstants[0].initial,
+    apiStatus: apiStatusConstants.initial,
     resultData: [],
     activeId: languageFiltersData[0].id,
   }
@@ -46,7 +46,7 @@ class GithubPopularRepos extends Component {
 
     const data = await response.json()
 
-    if (response.ok === true) {
+    if (response.ok) {
       const formattedData = data.popular_repos.map(eachItem => ({
         name: eachItem.name,
         id: eachItem.id,
@@ -67,9 +67,12 @@ class GithubPopularRepos extends Component {
   }
 
   idChanged = id => {
-    this.setState({
-      activeId: id,
-    })
+    this.setState(
+      {
+        activeId: id,
+      },
+      this.getDataFromServer,
+    )
   }
 
   renderSuccessView = () => {
